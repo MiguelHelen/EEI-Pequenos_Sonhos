@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const endDate = new Date('2024-12-15T23:59:59');
+  const endDate = new Date('2025-06-10T23:59:59');
   const timerElement = document.getElementById('timer');
   const rankCardsElement = document.getElementById('rank-cards');
 
   // Ranking inicial
   const ranking = [
-      { sala: 'Berçario-A 🌈', total: 13 },
-      { sala: 'Berçario-B 🌟', total: 22 },
-      { sala: 'Educação Infantil-B 💭', total: 30 },
-      { sala: 'Educação Infantil-A 💙', total: 16 },
-      { sala: 'Berçario-C 💚', total: 25 },
-      { sala: 'Educação Infantil-C 🧡', total: 14},
+      { sala: 'Berçario-A 🧤', total: 0 },
+      { sala: 'Berçario-B ❄️', total: 0  },
+      { sala: 'Educação Infantil-B ☃️', total: 0 },
+      { sala: 'Educação Infantil-A 🧥', total: 0 },
+      { sala: 'Berçario-C 👢', total: 0 },
+      { sala: 'Educação Infantil-C 🧦', total: 0},
   ];
 
   // Atualiza o cronômetro
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(() => {
       simulateDonations();
       updateRanking();
-  }, 50000); // 5 minutos
+  }, 70000); // 5 minutos
 
   setInterval(updateTimer, 1000); // Atualiza o cronômetro a cada segundo
 
